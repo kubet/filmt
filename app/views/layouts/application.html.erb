@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Filmtalis</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <% begin %>
+  <%= stylesheet_link_tag 'application', 'data-turbolinks-track' => 'reload', media: 'all' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+<% end %>
+  </head>
+
+  <body>
+    	<%= render 'layouts/navbar' %>
+	<div class="container">
+		<% flash.each do |name, msg| %>
+			<%= content_tag(:div, msg, class: "alert alert-info") %>
+		<% end %>
+		<%= yield %>
+	</div>
+</body>
+<%= render 'layouts/footer' %>
+</html>

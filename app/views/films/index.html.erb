@@ -1,0 +1,16 @@
+<div class="row">
+  <% @films.each do |film| %>
+    <div class="col-sm-5 col-md-3">
+      <div class="thumbnail">
+        <%= link_to film do %>
+            <%= image_tag film.img, class: 'poster', width: 199, height: 319, alt: film.title%>
+            <%= image_tag 'play.svg', class: 'play', width: 60, height: 60, alt: ">" %>
+        <% end %>
+        </div>
+            <div class="titl">
+            <%= link_to film.title, film, class: "caption" %>
+            <p class="year"><%= film.year %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,6 @@
+<h1 class="naziv"><%= @film.title %></h1>
+<% if @film.url.blank? %>
+<h1>Uskoro sajt je u izradi! :D Filmtalis</h1>
+<% end %>
+<p class="opis"><%= @film.desc %></p>
+<iframe src="<%= @film.url %>" scrolling="no" frameborder="0" width="700" height="430" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>

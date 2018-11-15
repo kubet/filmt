@@ -1,0 +1,60 @@
+// Place all the styles related to the films controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.caption {
+    color: #F5F5F5;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.caption:hover {
+    color:#F1C40F;
+    text-decoration: none;
+}
+.titl {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.year {
+    color: #9E9E9E;
+}
+.poster {
+    position: relative;
+    border-radius:9px;
+}
+.thumbnail {
+    border:none !important;
+    padding:0 !important;
+    position: relative;
+    margin: 5px;            
+}
+.thumbnail:hover {
+    .poster {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        opacity: 0.5;
+    }
+    .play {
+        visibility: visible;
+    }
+}
+.play{
+        top: 40%;
+        left: 30%;
+        visibility: hidden;
+        position: absolute;
+}
+.naziv {
+    color: #E0E0E0;
+}
+.opis {
+    color: #9E9E9E;
+}
+.footer{
+    text-align: center;
+    color: #FFFC00;
+}

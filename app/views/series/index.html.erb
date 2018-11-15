@@ -1,0 +1,16 @@
+<div class="row">
+  <% @series.each do |serie| %>
+    <div class="col-sm-5 col-md-3">
+      <div class="thumbnail">
+        <%= link_to serie do %>
+            <%= image_tag serie.img, class: 'poster', width: 199, height: 319, alt: serie.title%>
+            <%= image_tag 'play.svg', class: 'play', width: 60, height: 60, alt: ">" %>
+        <% end %>
+        </div>
+            <div class="titl">
+            <%= link_to serie.title, serie, class: "caption" %>
+            <p class="year"><%= serie.year %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
